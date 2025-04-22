@@ -8,6 +8,8 @@ public class Assignment4Application {
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 
 
+		
+		
 		FileService fileService = new FileService();
 		Assignment4UserService studentService = new Assignment4UserService();
 		Student[] students = fileService.readFile();

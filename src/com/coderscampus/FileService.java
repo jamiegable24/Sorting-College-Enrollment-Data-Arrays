@@ -14,7 +14,7 @@ public class FileService {
 
 	public Student[] readFile() throws FileNotFoundException, IOException {
 		try (BufferedReader reader = new BufferedReader(
-				new FileReader("C:\\Users\\jamie\\OneDrive\\Desktop\\student-master-list.csv"))) {
+				new FileReader("student-master-list.csv"))) {
 			reader.readLine();
 			Student[] students = new Student[101];
 			for (int i = 0; i < 101; i++) {
@@ -23,6 +23,8 @@ public class FileService {
 			}
 			Arrays.sort(students);
 			return students;
+			
+			
 		}
 	}
 
